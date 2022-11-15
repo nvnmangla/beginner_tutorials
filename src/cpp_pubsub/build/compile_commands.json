@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/naveen/courses/ENPM808x/beginner_tutorials/src/cpp_pubsub/build",
+  "command": "/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -isystem /opt/ros/foxy/include -g -Wall -Wextra -Wpedantic -std=gnu++14 -o CMakeFiles/talker.dir/src/publisher_member_function.cpp.o -c /home/naveen/courses/ENPM808x/beginner_tutorials/src/cpp_pubsub/src/publisher_member_function.cpp",
+  "file": "/home/naveen/courses/ENPM808x/beginner_tutorials/src/cpp_pubsub/src/publisher_member_function.cpp"
+}
+]
