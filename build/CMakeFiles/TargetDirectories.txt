@@ -1,9 +1,0 @@
-/home/naveen/courses/ENPM808x/beginner_tutorials/build/CMakeFiles/uninstall.dir
-/home/naveen/courses/ENPM808x/beginner_tutorials/build/CMakeFiles/cpp_pubsub_uninstall.dir
-/home/naveen/courses/ENPM808x/beginner_tutorials/build/CMakeFiles/test.dir
-/home/naveen/courses/ENPM808x/beginner_tutorials/build/CMakeFiles/edit_cache.dir
-/home/naveen/courses/ENPM808x/beginner_tutorials/build/CMakeFiles/rebuild_cache.dir
-/home/naveen/courses/ENPM808x/beginner_tutorials/build/CMakeFiles/list_install_components.dir
-/home/naveen/courses/ENPM808x/beginner_tutorials/build/CMakeFiles/install.dir
-/home/naveen/courses/ENPM808x/beginner_tutorials/build/CMakeFiles/install/local.dir
-/home/naveen/courses/ENPM808x/beginner_tutorials/build/CMakeFiles/install/strip.dir
