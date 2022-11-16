@@ -59,7 +59,7 @@ ros2 run beginner_tutorials client <string 1> <string 2>
 ## Launch
 To run the client node, open a new terminal and run:
 ```
-cd <your_ROS2_ws>/src/beginners_tutorials/launch
+cd <your_ROS2_ws>/src/beginner_tutorials/launch
 ros2 launch nodes.yaml
 ```
 
