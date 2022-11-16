@@ -53,8 +53,3 @@ Run the following command from the root directory of your ROS package
 ```
  cpplint --filter=-build/c++11,+build/c++17,-build/namespaces,-build/include_order ./src/*.cpp > ./results/cpplint.txt
 ```
-### Google Styling format
-Run the following command from the directory where the .cpp files are present(src in this case)
-```
- cpplint --filter=-build/c++11,+build/c++17,-build/namespaces,-build/include_order ./src/*.cpp > ./results/cpplint.txt
-```
