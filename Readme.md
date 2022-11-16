@@ -40,6 +40,29 @@ cd <your_ROS2_ws>
 ros2 run beginner_tutorials listener
 ```
 
+### Run Server
+This will merge two different strings
+To run the server node, open a new terminal and run:
+```
+cd <your_ROS2_ws>
+. install/setup.bash
+ros2 run beginner_tutorials server
+```
+
+### Run Client
+To run the client node, open a new terminal and run:
+```
+cd <your_ROS2_ws>
+. install/setup.bash
+ros2 run beginner_tutorials client <string 1> <string 2>
+```
+## Launch
+To run the client node, open a new terminal and run:
+```
+cd <your_ROS2_ws>/src/beginners_tutorials/launch
+ros2 launch nodes.yaml
+```
+
 ## Results
 The results after running the following commands are stored in the <your_package>/results folder.
 

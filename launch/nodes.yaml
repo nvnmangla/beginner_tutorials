@@ -1,0 +1,11 @@
+launch:
+- node:
+    pkg: "beginner_tutorials"
+    exec: "talker"
+    name: "talker"
+  
+
+- node:
+    pkg: "beginner_tutorials"
+    exec: "listner"
+    name: "listner"

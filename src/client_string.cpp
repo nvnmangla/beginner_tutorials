@@ -34,7 +34,7 @@ int main(int argc, char **argv) {
 
   while (!client->wait_for_service(1s)) {
     if (!rclcpp::ok()) {
-      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"),
+      RCLCPP_FATAL(rclcpp::get_logger("rclcpp"),
                    "Interrupted while waiting for the service. Exiting.");
       return 0;
     }
