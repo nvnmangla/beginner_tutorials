@@ -1,0 +1,72 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /home/naveen/anaconda3/bin/python3 (found suitable version "3.9.12", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /home/naveen/anaconda3/bin/python3
+-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/naveen/courses/ENPM808x/beginner_tutorials/build/beginner_tutorials
+[ 25%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/listner.dir/src/subscriber_member_function.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable talker[0m
+[ 75%] Built target talker
+[100%] [32m[1mLinking CXX executable listner[0m
+[100%] Built target listner
+-- Install configuration: ""
+-- Installing: /home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/lib/beginner_tutorials/talker
+-- Set runtime path of "/home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/lib/beginner_tutorials/talker" to ""
+-- Installing: /home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/lib/beginner_tutorials/listner
+-- Set runtime path of "/home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/lib/beginner_tutorials/listner" to ""
+-- Installing: /home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/share/ament_index/resource_index/package_run_dependencies/beginner_tutorials
+-- Installing: /home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/share/ament_index/resource_index/parent_prefix_path/beginner_tutorials
+-- Installing: /home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/share/beginner_tutorials/environment/ament_prefix_path.sh
+-- Installing: /home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/share/beginner_tutorials/environment/ament_prefix_path.dsv
+-- Installing: /home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/share/beginner_tutorials/environment/path.sh
+-- Installing: /home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/share/beginner_tutorials/environment/path.dsv
+-- Installing: /home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/share/beginner_tutorials/local_setup.bash
+-- Installing: /home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/share/beginner_tutorials/local_setup.sh
+-- Installing: /home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/share/beginner_tutorials/local_setup.zsh
+-- Installing: /home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/share/beginner_tutorials/local_setup.dsv
+-- Installing: /home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/share/beginner_tutorials/package.dsv
+-- Installing: /home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/share/ament_index/resource_index/packages/beginner_tutorials
+-- Installing: /home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/share/beginner_tutorials/cmake/beginner_tutorialsConfig.cmake
+-- Installing: /home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/share/beginner_tutorials/cmake/beginner_tutorialsConfig-version.cmake
+-- Installing: /home/naveen/courses/ENPM808x/beginner_tutorials/install/beginner_tutorials/share/beginner_tutorials/package.xml
