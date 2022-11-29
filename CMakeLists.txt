@@ -21,7 +21,14 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(turtlesim REQUIRED)
+
+
+
 find_package(rosidl_default_generators REQUIRED)
+include_directories(include)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
  
@@ -51,10 +58,11 @@ rosidl_target_interfaces(server
 rosidl_target_interfaces(client
   ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
-ament_target_dependencies(talker rclcpp std_msgs )
+ament_target_dependencies(talker rclcpp std_msgs tf2 tf2_ros)
 ament_target_dependencies(listner rclcpp std_msgs)
 ament_target_dependencies(server rclcpp std_msgs)
 ament_target_dependencies(client rclcpp std_msgs)
+
 
 
 
