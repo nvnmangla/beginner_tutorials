@@ -1,11 +1,21 @@
 launch:
+- arg: 
+    name: "ros_resord" 
+    default: "false"
+
+# Talker Node
 - node:
     pkg: "beginner_tutorials"
     exec: "talker"
     name: "talker"
-  
 
+# Listner Node
 - node:
     pkg: "beginner_tutorials"
     exec: "listner"
     name: "listner"
+
+# Ros2 Rocorder Node
+- executable:
+     cmd: "ros2 bag record -a --output ../results/bag/" 
+     if: $(var ros_record)
