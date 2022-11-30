@@ -7,10 +7,16 @@
 
 using namespace std::chrono_literals;
 
-
-
+/**
+ * @brief This will start /chatter and 
+ * /tf topics
+ */
 class MinimalPublisher : public rclcpp::Node {
  public:
+ /**
+  * @brief Construct a new Minimal Publisher Node 
+  * 
+  */
   MinimalPublisher() : Node("minimal_publisher"), count_(0) {
     // this is TF Broadcaster
     tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
@@ -26,27 +32,24 @@ class MinimalPublisher : public rclcpp::Node {
     RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
     geometry_msgs::msg::TransformStamped t;
 
-    // Transformations.
+    //  TF Transformations.
     t.header.stamp = this->get_clock()->now();
     t.header.frame_id = "world"; // World frame
     t.child_frame_id = "talk"; // Talk frame
-    t.transform.translation.x = 0.0;
+    t.transform.translation.x = 2.0;
     t.transform.translation.y = 2.0;
-    t.transform.translation.z = 0.0;
-    t.transform.rotation.x = 0.0;
-    t.transform.rotation.y = 0.0;
+    t.transform.translation.z = 1.0;
+    t.transform.rotation.x = 1.0;
+    t.transform.rotation.y = 1.0;
     t.transform.rotation.z = 0.0;
     t.transform.rotation.w = 1.0;
 
-    tf_broadcaster_->sendTransform(t);
-
-    publisher_->publish(message);
+    tf_broadcaster_->sendTransform(t); // send Transform
+    publisher_->publish(message); // publish message
   }
   rclcpp::TimerBase::SharedPtr timer_;
   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
   size_t count_;
-
-
   std::shared_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
 };
 
