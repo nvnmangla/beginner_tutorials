@@ -16,7 +16,7 @@ void schange(
     std::shared_ptr<beginner_tutorials::srv::StringChange::Response> response) {
   response->sum = request->a + " " + request->b;
 
-  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Incoming request\na:%s , b:%s",
+  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Incoming request\na:%s,b:%s",
               request->a.c_str(), request->b.c_str());
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "sending back response:%s",
               response->sum.c_str());

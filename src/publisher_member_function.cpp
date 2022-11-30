@@ -12,11 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include<broadcaster.hpp>
+// #include<broadcaster.hpp>
+#include<minial_publisher.hpp>
+
 
 int main(int argc, char* argv[]) {
   rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<Broadcaster>());
+  rclcpp::spin(std::make_shared<MinimalPublisher>());
+
   rclcpp::shutdown();
   return 0;
 }
