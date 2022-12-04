@@ -19,12 +19,15 @@ limitations under the License.
  * @brief Publisher class
  * @version 0.1
  * @date 2022-11-30
- * 
+ *
  * @copyright Copyright (c) 2022
- * 
+ *
  */
+#ifndef ROS2_WS_SRC_BEGINNER_TUTORIALS_INCLUDE_MINIAL_PUBLISHER_HPP_
+#define ROS2_WS_SRC_BEGINNER_TUTORIALS_INCLUDE_MINIAL_PUBLISHER_HPP_
 #include <chrono>
 #include <memory>
+
 #include "geometry_msgs/msg/transform_stamped.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
@@ -33,15 +36,15 @@ limitations under the License.
 using namespace std::chrono_literals;
 
 /**
- * @brief This will start /chatter and 
+ * @brief This will start /chatter and
  * /tf topics
  */
 class MinimalPublisher : public rclcpp::Node {
  public:
- /**
-  * @brief Construct a new Minimal Publisher Node 
-  * 
-  */
+  /**
+   * @brief Construct a new Minimal Publisher Node
+   *
+   */
   MinimalPublisher() : Node("minimal_publisher"), count_(0) {
     // this is TF Broadcaster
     tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
@@ -59,8 +62,8 @@ class MinimalPublisher : public rclcpp::Node {
 
     //  TF Transformations.
     t.header.stamp = this->get_clock()->now();
-    t.header.frame_id = "world"; // World frame
-    t.child_frame_id = "talk"; // Talk frame
+    t.header.frame_id = "world";  // World frame
+    t.child_frame_id = "talk";    // Talk frame
     t.transform.translation.x = 2.0;
     t.transform.translation.y = 2.0;
     t.transform.translation.z = 1.0;
@@ -69,8 +72,8 @@ class MinimalPublisher : public rclcpp::Node {
     t.transform.rotation.z = 0.0;
     t.transform.rotation.w = 1.0;
 
-    tf_broadcaster_->sendTransform(t); // send Transform
-    publisher_->publish(message); // publish message
+    tf_broadcaster_->sendTransform(t);  // send Transform
+    publisher_->publish(message);       // publish message
   }
   rclcpp::TimerBase::SharedPtr timer_;
   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
@@ -79,3 +82,5 @@ class MinimalPublisher : public rclcpp::Node {
 };
 
 
+
+#endif  // ROS2_WS_SRC_BEGINNER_TUTORIALS_INCLUDE_MINIAL_PUBLISHER_HPP_

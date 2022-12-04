@@ -1,5 +1,4 @@
-/**
-MIT License
+
 /*
 Copyright 2022 Naveen Mangla
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,22 +14,20 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-
 /**
  * @file client_string.cpp
  * @author Naveen Mangla (nmangla@umd.edu)
- * @brief Client node 
+ * @brief Client node
  * @version 0.1
  * @date 2022-11-16
- * 
+ *
  * @copyright Copyright (c) 2022
- * 
+ *
  */
 
 #include <chrono>
 #include <cstdlib>
 #include <memory>
-
 #include "beginner_tutorials/srv/string_change.hpp"
 #include "rclcpp/rclcpp.hpp"
 

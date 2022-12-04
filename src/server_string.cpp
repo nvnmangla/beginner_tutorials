@@ -23,6 +23,7 @@ limitations under the License.
  */
 #include <memory>
 #include <rclcpp/logging.hpp>
+
 #include "beginner_tutorials/srv/string_change.hpp"
 #include "rclcpp/rclcpp.hpp"
 void schange(
@@ -36,6 +37,7 @@ void schange(
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "sending back response:%s",
               response->sum.c_str());
 }
+
 int main(int argc, char **argv) {
   rclcpp::init(argc, argv);
   std::shared_ptr<rclcpp::Node> node =
