@@ -8,10 +8,10 @@ This is a ROS Package that defines a basic publisher and subscriber with custom 
 
 ### Dependencies/ Assumptions
 - OS : Ubuntu 20.04 
-- ROS2 Distro : ROS2 Foxy
+- ROS2 Distro : ROS2 Galactic
 - Package build type : ```ament_cmake ```
 - Package dependencies : ```rclcpp```, ```std_msgs``` 
-- ROS2 Foxy Installation : [link](https://automaticaddison.com/how-to-install-ros-2-foxy-fitzroy-on-ubuntu-linux/)
+- ROS2 galactic Installation : [link](https://automaticaddison.com/how-to-install-ros-2-galactic-fitzroy-on-ubuntu-linux/)
 
 ## How to Run the ROS Package
 ### Build Instructions
@@ -19,7 +19,7 @@ This is a ROS Package that defines a basic publisher and subscriber with custom 
 cd <your_ROS2_ws>/src
 git clone https://github.com/nvnmangla/beginner_tutorials.git
 cd ..   
-rosdep install -i --from-path src --rosdistro foxy -y
+rosdep install -i --from-path src --rosdistro galactic -y
 colcon build --packages-select beginner_tutorials
 source . install/setup.bash
 source ~/<your ROS2 installation>/install/local_setup.bash
