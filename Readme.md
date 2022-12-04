@@ -60,11 +60,35 @@ ros2 run beginner_tutorials client <string 1> <string 2>
 To run the client node, open a new terminal and run:
 ```
 cd <your_ROS2_ws>/src/beginners_tutorials/launch
-ros2 launch nodes.yaml
+```
+If you want to record bag
+```
+ros2 launch nodes.yaml ros_record:=true
+```
+else:
+```
+ros2 launch nodes.yaml ros_record:=false
+```
+## Play Bag
+
+```
+cd <your_ROS2_ws>src/beginners_tutorials/results/bag
+ros2 play bag <bag_file>
 ```
 
+## Testing 
+Without Verbose output
+```
+colcon test --packages-select beginner_tutorials
+```
+With Verbose output
+```
+colcon test --event-handlers console_direct+ --packages-select beginner_tutorials
+```
+
+
 ## Results
-The results after running the following commands are stored in the <your_package>/results folder.
+The results after running the following commands are stored in the <your_package>/results folder. This inclues Bag folder as well
 
 ### cppcheck
 Run the following command from the root directory of your ROS package
